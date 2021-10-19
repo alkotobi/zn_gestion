@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.14)
+set(CMAKE_PREFIX_PATH "/Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/lib/cmake/")
+project(cqt LANGUAGES CXX)
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
+
+add_library(cqt STATIC
+qt4c.cpp
+qt4c.h
+)
+
+target_link_libraries(cqt PRIVATE Qt${QT_VERSION_MAJOR}::Widgets mnlibrary)
+target_compile_definitions(cqt PRIVATE CQT_LIBRARY)
+target_include_directories(cqt PUBLIC ./)

@@ -1,0 +1,16 @@
+/Users/merhab/dev/emacs/zn_gestion/build/CMakeFiles/rebuild_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/CMakeFiles/edit_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/libs/CMakeFiles/rebuild_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/libs/CMakeFiles/edit_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/libs/mnlibrary/CMakeFiles/rebuild_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/libs/mnlibrary/CMakeFiles/edit_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/libs/mnlibrary/CMakeFiles/mnlibrary.dir
+/Users/merhab/dev/emacs/zn_gestion/build/libs/cqt/CMakeFiles/rebuild_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/libs/cqt/CMakeFiles/edit_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/libs/cqt/CMakeFiles/cqt.dir
+/Users/merhab/dev/emacs/zn_gestion/build/libs/cqt/CMakeFiles/cqt_autogen.dir
+/Users/merhab/dev/emacs/zn_gestion/build/src/CMakeFiles/rebuild_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/src/CMakeFiles/edit_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/src/CMakeFiles/gestion.dir
+/Users/merhab/dev/emacs/zn_gestion/build/tests/CMakeFiles/rebuild_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/tests/CMakeFiles/edit_cache.dir

@@ -1,0 +1,3 @@
+add_subdirectory(./mnlibrary)
+add_subdirectory(./cqt)
+add_subdirectory(./znlib)
