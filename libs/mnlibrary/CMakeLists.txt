@@ -1,5 +1,19 @@
 add_library(mnlibrary
-  mntypes.h
-  mntypes.c
+  mntest.h
+  mntest.c
+  types.h
+  types.c
+  cstring.h
+  cstring.c
+  mnarray.h
+  mnarray.c
+  mnstring.h
+  mnstring.c
+  mnvariant.h
+  mnvariant.c
+  mnfield.h
+  mnfield.c
+  mnfieldList.h
+  mnfieldList.c
   )
 target_include_directories(mnlibrary PUBLIC ./)

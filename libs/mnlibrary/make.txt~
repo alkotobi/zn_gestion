@@ -1,0 +1,1 @@
+clang main.c types.h types.c cstring.c cstring.h mnarray.h mnarray.c mnstring.h mnstring.c 

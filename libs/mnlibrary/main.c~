@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main(){
+
+
+  printf("bismi allh\n");
+  return 0;
+}

@@ -703,7 +703,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "7"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -8888,6 +8888,30 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/merhab/dev/emacs/zn_gestion/src"
+		},
+		{
+			"name" : "mnlibrary_test_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/merhab/dev/emacs/zn_gestion/build/tests/mnlibrary"
+		},
+		{
+			"name" : "mnlibrary_test_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/merhab/dev/emacs/zn_gestion/tests/mnlibrary"
 		},
 		{
 			"name" : "zn_gestion_BINARY_DIR",

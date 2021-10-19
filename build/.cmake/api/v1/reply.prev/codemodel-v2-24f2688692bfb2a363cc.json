@@ -79,6 +79,10 @@
 				},
 				{
 					"build" : "tests",
+					"childIndexes" : 
+					[
+						6
+					],
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -86,6 +90,20 @@
 					"parentIndex" : 0,
 					"projectIndex" : 0,
 					"source" : "tests"
+				},
+				{
+					"build" : "tests/mnlibrary",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 3,
+					"source" : "tests/mnlibrary",
+					"targetIndexes" : 
+					[
+						4
+					]
 				}
 			],
 			"name" : "Debug",
@@ -95,7 +113,8 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					],
 					"directoryIndexes" : 
 					[
@@ -134,6 +153,18 @@
 					[
 						2
 					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "mnlibrary_test",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
 				}
 			],
 			"targets" : 
@@ -141,7 +172,7 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "cqt::@7a5b1fcbfb9f1ab97050",
-					"jsonFile" : "target-cqt-Debug-bb0e9e49289c3fcf1117.json",
+					"jsonFile" : "target-cqt-Debug-0b5b7c811e99cb0596c1.json",
 					"name" : "cqt",
 					"projectIndex" : 1
 				},
@@ -162,9 +193,16 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "mnlibrary::@32703b1e6f8f8bf34355",
-					"jsonFile" : "target-mnlibrary-Debug-105bd646d72f7984dba7.json",
+					"jsonFile" : "target-mnlibrary-Debug-105f1fdc8ab37bf80416.json",
 					"name" : "mnlibrary",
 					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "mnlibrary_test::@9546a73298042f905faf",
+					"jsonFile" : "target-mnlibrary_test-Debug-ef32117b6f7045a474fa.json",
+					"name" : "mnlibrary_test",
+					"projectIndex" : 3
 				}
 			]
 		}

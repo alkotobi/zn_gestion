@@ -1,0 +1,269 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "libs/cqt/libcqt.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"libs/cqt/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "CQT_LIBRARY"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_WIDGETS_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/Users/merhab/dev/emacs/zn_gestion/build/libs/cqt"
+				},
+				{
+					"path" : "/Users/merhab/dev/emacs/zn_gestion/libs/cqt"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "/Users/merhab/dev/emacs/zn_gestion/build/libs/cqt/cqt_autogen/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/."
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtWidgets"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtCore"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/mkspecs/macx-clang"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtGui"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "cqt_autogen::@7a5b1fcbfb9f1ab97050"
+		},
+		{
+			"id" : "mnlibrary::@32703b1e6f8f8bf34355"
+		}
+	],
+	"id" : "cqt::@7a5b1fcbfb9f1ab97050",
+	"name" : "cqt",
+	"nameOnDisk" : "libcqt.a",
+	"paths" : 
+	{
+		"build" : "libs/cqt",
+		"source" : "libs/cqt"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				3
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				4
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				5,
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/libs/cqt/cqt_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libs/cqt/qt4c.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libs/cqt/qt4c.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/libs/cqt/cqt_autogen/timestamp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/libs/cqt/cqt_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "/Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/lib/objects-Release/Widgets_resources_1/.rcc/qrc_qstyle.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "/Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/lib/objects-Release/Widgets_resources_2/.rcc/qrc_qstyle1.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "/Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/lib/objects-Release/Widgets_resources_3/.rcc/qrc_qmessagebox.cpp.o",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "/Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/lib/objects-Release/Gui_resources_1/.rcc/qrc_qpdf.cpp.o",
+			"sourceGroupIndex" : 4
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

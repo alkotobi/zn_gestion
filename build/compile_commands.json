@@ -1,8 +1,43 @@
 [
 {
   "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
-  "command": "/usr/bin/clang -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mntypes.c.o -c /Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mntypes.c",
-  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mntypes.c"
+  "command": "/usr/bin/clang -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mntest.c.o -c /Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mntest.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mntest.c"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o libs/mnlibrary/CMakeFiles/mnlibrary.dir/types.c.o -c /Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/types.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/types.c"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o libs/mnlibrary/CMakeFiles/mnlibrary.dir/cstring.c.o -c /Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/cstring.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/cstring.c"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnarray.c.o -c /Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mnarray.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mnarray.c"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnstring.c.o -c /Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mnstring.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mnstring.c"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnvariant.c.o -c /Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mnvariant.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mnvariant.c"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnfield.c.o -c /Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mnfield.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mnfield.c"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnfieldList.c.o -c /Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mnfieldList.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mnfieldList.c"
 },
 {
   "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
@@ -88,5 +123,20 @@
   "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
   "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB -Isrc -I../src -I../libs/mnlibrary/. -I../libs/cqt/. -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtWidgets -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtCore -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/mkspecs/macx-clang -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtGui -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtCore/6.1.1 -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtCore/6.1.1/QtCore -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtGui/6.1.1 -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtGui/6.1.1/QtGui -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtSvg -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -ffunction-sections -fdata-sections -std=gnu++17 -o src/CMakeFiles/gestion.dir/qt_Gui_QWebpPlugin.cpp.o -c /Users/merhab/dev/emacs/zn_gestion/build/src/qt_Gui_QWebpPlugin.cpp",
   "file": "/Users/merhab/dev/emacs/zn_gestion/build/src/qt_Gui_QWebpPlugin.cpp"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang -Itests/mnlibrary -I../tests/mnlibrary -I../tests/mnlibrary/../../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o tests/mnlibrary/CMakeFiles/mnlibrary_test.dir/main.c.o -c /Users/merhab/dev/emacs/zn_gestion/tests/mnlibrary/main.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/tests/mnlibrary/main.c"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang -Itests/mnlibrary -I../tests/mnlibrary -I../tests/mnlibrary/../../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o tests/mnlibrary/CMakeFiles/mnlibrary_test.dir/mnlibrary_test.c.o -c /Users/merhab/dev/emacs/zn_gestion/tests/mnlibrary/mnlibrary_test.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/tests/mnlibrary/mnlibrary_test.c"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang -Itests/mnlibrary -I../tests/mnlibrary -I../tests/mnlibrary/../../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o tests/mnlibrary/CMakeFiles/mnlibrary_test.dir/testing.c.o -c /Users/merhab/dev/emacs/zn_gestion/tests/mnlibrary/testing.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/tests/mnlibrary/testing.c"
 }
 ]
