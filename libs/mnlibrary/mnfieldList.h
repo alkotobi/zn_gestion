@@ -26,6 +26,6 @@ TField* TFieldList_item_with_name(TFieldList* flds, char* name);
 TFieldList* TFieldList_clone(TFieldList* flds);
 char TFieldList_is_equal(TFieldList* flds1, TFieldList* flds2);
 void TFieldList_sort_by_order(TFieldList* flds);
-TString* TFieldList_field_names(TFieldList* flds);
+char* TFieldList_field_names(TFieldList* flds);
 
 TSize TFieldList_count(TFieldList* flds);
