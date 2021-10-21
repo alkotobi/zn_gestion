@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include <assert.h>
 typedef long int TSize;
+typedef int mint ;
+typedef double mdouble ;
 typedef void TVar;
 typedef void** TPtrHld;
 typedef TVar*(*TFVarVar)(TVar*);

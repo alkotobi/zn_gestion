@@ -49,3 +49,38 @@ TString* TStringList_add(TStringList* str_l, TString* str);
 TStringList** TStringList_clean(TStringList** str_l);
 void TStringList_free(TStringList** str_l);
 void TStringList_destroy(TStringList** str_l);
+
+/*
+
+                    MNSTRING
+*/
+
+#define STR_STD_SIZE 255
+typedef char* mnstring ;
+typedef struct{
+    mint size;
+    mint count;
+    mint ind;
+} strPrm;
+
+mnstring mnstring_new(mint size,const char* str_init);
+void mnstring_free(mnstring* ptr_hld);
+mnstring mnstring_new_empty(mint size);
+mnstring mnstring_new_from_cstring(const char* str_init);
+strPrm* mnstring_strprm(mnstring str);
+mnstring mnstring_new_clone(mnstring str);
+mnstring mnstring_grow_size(mnstring str, int new_size);
+mnstring mnstring_grow_size_double(mnstring str);
+char mnstring_is_full(mnstring str);
+mnstring mnstring_append_char(mnstring str,char c);
+mint mnstring_size(mnstring str);
+mint mnstring_count(mnstring str);
+void mnstring_set_count(mnstring str,mint new_count);
+void mnstring_count_pp(mnstring str);
+mnstring mnstring_append_cstring(mnstring str, mint str_sub_count, const char* str_sub);
+mnstring mnstring_append_mnstring(mnstring str, mnstring str_sub);
+mnstring mnstring_from_mint(mint n);
+mnstring mnstring_from_double(mdouble f);
+mnstring mnstring_fill_empty_with_char(mnstring str,mint start,mint end,char c);
+mnstring mnstring_init_empty(mnstring str);
+mnstring mnstring_clear(mnstring str);

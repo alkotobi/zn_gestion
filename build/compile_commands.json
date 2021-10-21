@@ -46,8 +46,33 @@
 },
 {
   "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
-  "command": "/usr/bin/clang++ -DCQT_LIBRARY -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Ilibs/cqt -I../libs/cqt -Ilibs/cqt/cqt_autogen/include -I../libs/cqt/. -I../libs/mnlibrary/. -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtWidgets -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtCore -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/mkspecs/macx-clang -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtGui -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -ffunction-sections -fdata-sections -std=gnu++17 -o libs/cqt/CMakeFiles/cqt.dir/qt4c.cpp.o -c /Users/merhab/dev/emacs/zn_gestion/libs/cqt/qt4c.cpp",
-  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/qt4c.cpp"
+  "command": "/usr/bin/clang++ -DCQT_LIBRARY -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Ilibs/cqt -I../libs/cqt -Ilibs/cqt/cqt_autogen/include -I../libs/cqt/. -I../libs/mnlibrary/. -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtWidgets -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtCore -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/mkspecs/macx-clang -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtGui -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -ffunction-sections -fdata-sections -std=gnu++17 -o libs/cqt/CMakeFiles/cqt.dir/cqstring.cpp.o -c /Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqstring.cpp",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqstring.cpp"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang++ -DCQT_LIBRARY -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Ilibs/cqt -I../libs/cqt -Ilibs/cqt/cqt_autogen/include -I../libs/cqt/. -I../libs/mnlibrary/. -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtWidgets -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtCore -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/mkspecs/macx-clang -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtGui -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -ffunction-sections -fdata-sections -std=gnu++17 -o libs/cqt/CMakeFiles/cqt.dir/cqvariant.cpp.o -c /Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqvariant.cpp",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqvariant.cpp"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang++ -DCQT_LIBRARY -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Ilibs/cqt -I../libs/cqt -Ilibs/cqt/cqt_autogen/include -I../libs/cqt/. -I../libs/mnlibrary/. -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtWidgets -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtCore -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/mkspecs/macx-clang -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtGui -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -ffunction-sections -fdata-sections -std=gnu++17 -o libs/cqt/CMakeFiles/cqt.dir/cqwidget.cpp.o -c /Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqwidget.cpp",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqwidget.cpp"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang++ -DCQT_LIBRARY -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Ilibs/cqt -I../libs/cqt -Ilibs/cqt/cqt_autogen/include -I../libs/cqt/. -I../libs/mnlibrary/. -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtWidgets -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtCore -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/mkspecs/macx-clang -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtGui -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -ffunction-sections -fdata-sections -std=gnu++17 -o libs/cqt/CMakeFiles/cqt.dir/cqlayout.cpp.o -c /Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlayout.cpp",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlayout.cpp"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang++ -DCQT_LIBRARY -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Ilibs/cqt -I../libs/cqt -Ilibs/cqt/cqt_autogen/include -I../libs/cqt/. -I../libs/mnlibrary/. -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtWidgets -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtCore -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/mkspecs/macx-clang -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtGui -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -ffunction-sections -fdata-sections -std=gnu++17 -o libs/cqt/CMakeFiles/cqt.dir/cqapplication.cpp.o -c /Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqapplication.cpp",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqapplication.cpp"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang++ -DCQT_LIBRARY -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Ilibs/cqt -I../libs/cqt -Ilibs/cqt/cqt_autogen/include -I../libs/cqt/. -I../libs/mnlibrary/. -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtWidgets -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtCore -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/mkspecs/macx-clang -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtGui -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -ffunction-sections -fdata-sections -std=gnu++17 -o libs/cqt/CMakeFiles/cqt.dir/cqlabel.cpp.o -c /Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlabel.cpp",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlabel.cpp"
 },
 {
   "directory": "/Users/merhab/dev/emacs/zn_gestion/build",

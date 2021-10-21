@@ -313,3 +313,174 @@ void TStringList_destroy(TStringList** str_l)
 {
     TStringList_free(TStringList_clean(str_l));
 }
+
+
+
+/*
+                MNSTRING
+*/
+
+mnstring mnstring_new(mint size, const char *str_init)
+{
+    char* str=0;
+    if (!str_init) {
+        str_init ="";
+    }
+    mint count = cstring_count((char*)str_init);
+    void* s =malloc(sizeof (strPrm)+(sizeof (char)*(size+1)));
+    if (s) {
+        str =s+sizeof (strPrm);
+        strPrm* flag= (strPrm*)s;
+        mint i=0;
+        for ( ;i< size && i<count ; i++ ) {
+            str[i]=str_init[i];
+        }
+        str[i]=0;
+        str[size]=0;
+        flag->size=size;
+        flag->ind=0;
+        flag->count=i;
+
+    }else assert(s);
+    return str;
+}
+
+void mnstring_free(mnstring *ptr_hld)
+{
+    mnstring str =* ptr_hld;
+    void* s = str-sizeof (strPrm);
+    free(s);
+    *ptr_hld=0;
+}
+
+mnstring mnstring_new_empty(mint size)
+{
+    return mnstring_new(size,"");
+}
+
+mnstring mnstring_new_from_cstring(const char *str_init)
+{
+    if(!str_init) str_init ="";
+    return mnstring_new(cstring_count((char*)str_init),str_init);
+}
+
+strPrm *mnstring_strprm(mnstring str)
+{
+    return  (strPrm*)(str-sizeof (strPrm));
+}
+
+mnstring mnstring_new_clone(mnstring str)
+{
+    return mnstring_new(mnstring_strprm(str)->size,str);
+}
+
+mnstring mnstring_append_char(mnstring str, char c)
+{
+    if (!str) {
+        str =mnstring_new(STR_STD_SIZE,"");
+    }
+    if(mnstring_is_full(str)) str=mnstring_grow_size_double(str);
+    str[mnstring_count(str)]=c;
+    mnstring_count_pp(str);
+    str[mnstring_count(str)]=0;
+
+
+    return str;
+}
+
+mnstring mnstring_grow_size(mnstring str,mint new_size)
+{
+    mnstring s = mnstring_new(new_size,str);
+    mnstring_free(&str);
+    return s;
+}
+
+char mnstring_is_full(mnstring str)
+{
+    assert(str);
+    strPrm* prm =mnstring_strprm(str);
+    return prm->count==prm->size;
+}
+
+mnstring mnstring_grow_size_double(mnstring str)
+{
+    return mnstring_grow_size(str,mnstring_size(str)*2);
+}
+
+mint mnstring_size(mnstring str)
+{
+    return mnstring_strprm(str)->size;
+}
+
+mint mnstring_count(mnstring str)
+{
+    return mnstring_strprm(str)->count;
+}
+
+void mnstring_set_count(mnstring str, mint new_count)
+{
+    mnstring_strprm(str)->count=new_count;
+}
+
+void mnstring_count_pp(mnstring str)
+{
+    mnstring_strprm(str)->count++;
+}
+
+mnstring mnstring_append_cstring(mnstring str, mint str_sub_count,const char *str_sub)
+{
+    if (!str) {
+        str = mnstring_new_empty(str_sub_count);
+    }
+    if (!str_sub) {
+        str_sub="";
+    }
+    mint count = mnstring_count(str)+str_sub_count;
+    if (mnstring_size(str)<(count)) {
+        str=mnstring_grow_size(str,count);
+    }
+
+    for (mint i=mnstring_count(str);i<count ;i++ ) {
+        str[i]=str_sub[i-mnstring_count(str)];
+    }
+    str[count]=0;
+    mnstring_set_count(str,count);
+    return str;
+}
+
+mnstring mnstring_append_mnstring(mnstring str, mnstring str_sub)
+{
+    return mnstring_append_cstring(str,mnstring_count(str_sub),str_sub);
+}
+
+mnstring mnstring_from_mint(mint n)
+{
+    return mnstring_new_from_cstring(cstring_from_int(n));
+}
+
+mnstring mnstring_from_double(mdouble f)
+{
+   return mnstring_new_from_cstring(cstring_from_double(f));
+}
+
+mnstring mnstring_fill_empty_with_char(mnstring str, mint start, mint end, char c)
+{
+    assert(str);
+    assert(start>=0 && start < mnstring_size(str));
+    assert(end>=0 && end < mnstring_size(str));
+    assert(start<=end);
+    for (mint i= start;i<=end ;i++ ) {
+        str[i]=c;
+    }
+    return str;
+}
+
+mnstring mnstring_init_empty(mnstring str)
+{
+    return mnstring_fill_empty_with_char(str,mnstring_count(str),mnstring_size(str),0);
+}
+
+mnstring mnstring_clear(mnstring str)
+{
+    return mnstring_fill_empty_with_char(str,0,mnstring_size(str),0);
+}

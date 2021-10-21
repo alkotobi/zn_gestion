@@ -8,8 +8,8 @@ TSize cstring_count(char* str);
 char* cstring_clone(char* str_src);
 void cstring_free(TPtrHld str_hld);
 char cstring_is_equal(char* str1, char* str2);
-char* cstring_from_int(int i);
-char* cstring_from_double(double f);
+char* cstring_from_int(mint i);
+char* cstring_from_double(mdouble f);
 char* cstring_new_empty(void);
 char* cstring_new_from_const(const char* str);
 char cstring_is_great(char* str1, char* str2);
@@ -21,13 +21,13 @@ char cstring_is_great(char* str1, char* str2);
 */
 typedef struct{
     char** list;
-    int count;
-    int size;
+    mint count;
+    mint size;
 }cstringList;
 
 cstringList* cstringList_new();
-cstringList* cstringList_init(cstringList* l,int size);
+cstringList* cstringList_init(cstringList* l,mint size);
 void cstringList_add(cstringList* l,char* str);
-char* cstringList_item_at(cstringList* l,int index);
+char* cstringList_item_at(cstringList* l,mint index);
 char* cstringList_to_new_cstring(cstringList* l);
 

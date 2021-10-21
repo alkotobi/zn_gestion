@@ -13,8 +13,19 @@ find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
 add_library(cqt STATIC
-qt4c.cpp
-qt4c.h
+cqheader.h
+cqstring.h
+cqstring.cpp
+cqvariant.h
+cqvariant.cpp
+cqwidget.h
+cqwidget.cpp
+cqlayout.h
+cqlayout.cpp
+cqapplication.h
+cqapplication.cpp
+cqlabel.h
+cqlabel.cpp
 )
 
 target_link_libraries(cqt PRIVATE Qt${QT_VERSION_MAJOR}::Widgets mnlibrary)

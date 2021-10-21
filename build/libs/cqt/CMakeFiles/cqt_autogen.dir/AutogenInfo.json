@@ -10,9 +10,39 @@
 	"HEADERS" : 
 	[
 		[
-			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/qt4c.h",
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqapplication.h",
 			"MU",
-			"EWIEGA46WW/moc_qt4c.cpp"
+			"EWIEGA46WW/moc_cqapplication.cpp"
+		],
+		[
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqheader.h",
+			"MU",
+			"EWIEGA46WW/moc_cqheader.cpp"
+		],
+		[
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlabel.h",
+			"MU",
+			"EWIEGA46WW/moc_cqlabel.cpp"
+		],
+		[
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlayout.h",
+			"MU",
+			"EWIEGA46WW/moc_cqlayout.cpp"
+		],
+		[
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqstring.h",
+			"MU",
+			"EWIEGA46WW/moc_cqstring.cpp"
+		],
+		[
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqvariant.h",
+			"MU",
+			"EWIEGA46WW/moc_cqvariant.cpp"
+		],
+		[
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_cqwidget.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -66,7 +96,12 @@
 	"SETTINGS_FILE" : "/Users/merhab/dev/emacs/zn_gestion/build/libs/cqt/CMakeFiles/cqt_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/qt4c.cpp", "MU" ]
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqapplication.cpp", "MU" ],
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlabel.cpp", "MU" ],
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlayout.cpp", "MU" ],
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqstring.cpp", "MU" ],
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqvariant.cpp", "MU" ],
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqwidget.cpp", "MU" ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

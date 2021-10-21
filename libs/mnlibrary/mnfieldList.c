@@ -103,7 +103,7 @@ TSize TFieldList_count(TFieldList* flds){
 char* TFieldList_field_names(TFieldList* flds){
   cstringList* l=cstringList_init(0,250);
   for(TSize i=0;i< TFieldList_count(flds);i++){
-    cstringList_add(l,TFieldList_item_at(l,i)->name);
+    cstringList_add(l,TFieldList_item_at(flds,i)->name);
   }
   return cstringList_to_new_cstring(l);
 }

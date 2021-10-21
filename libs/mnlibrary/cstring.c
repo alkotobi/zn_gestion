@@ -70,7 +70,7 @@ char cstring_is_equal(char* str1, char* str2)
     return 0;
 }
 
-char* cstring_from_int(int i)
+char* cstring_from_int(mint i)
 {
     char* cstring = cstring_new(30);
     snprintf(cstring,30, "%d", i);
@@ -86,7 +86,7 @@ char* cstring_new_from_const(const char* str)
 }
 
 
-char* cstring_from_double(double f)
+char* cstring_from_double(mdouble f)
 {
     char* cstring = cstring_new(40);
     snprintf(cstring,40, "%f", f);
@@ -104,7 +104,7 @@ cstringList* cstringList_new()
     
 }
 
-cstringList* cstringList_init(cstringList* l,int size)
+cstringList* cstringList_init(cstringList* l,mint size)
 {
     if (!l)
     {
@@ -122,7 +122,7 @@ cstringList* cstringList_init(cstringList* l,int size)
 void cstringList_add(cstringList* l,char* str)
 {
     if(l->count == l->size){
-        l->list =(cstringList*) mnrealloc(l->list,l->size*2*sizeof(char*));
+        l->list =( char**) mnrealloc(l->list,l->size*2*sizeof(char*));
         if(!l->list) assert(l->list);
         l->size=l->size*2;
     }
@@ -131,20 +131,20 @@ void cstringList_add(cstringList* l,char* str)
 
 }
 
-char* cstringList_item_at(cstringList* l,int index)
+char* cstringList_item_at(cstringList* l,mint index)
 {
     return l->list[index];
 }
 
 char* cstringList_to_new_cstring(cstringList* l)
 {
-    int count=0;
+    mint count=0;
     char* str=(char*)mnalloc((255)*sizeof(char));
-    int size=2;
+    mint size=2;
     if(!str) assert(str);
-    for (int i = 0; i < l->count; i++)
+    for (mint i = 0; i < l->count; i++)
     {
-        for (int j = 0;cstringList_item_at(l,i)[j]!=0 ; j++)
+        for (mint j = 0;cstringList_item_at(l,i)[j]!=0 ; j++)
         {
             if (count+1 ==size-1)
             {

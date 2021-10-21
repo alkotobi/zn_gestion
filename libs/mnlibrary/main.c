@@ -6,7 +6,7 @@ int main(){
   TFieldList* f =TFieldList_init(0);
   TFieldList_add(f, TField_create_cstring("name","hi"));
   TFieldList_add(f, TField_create_int("age",20));
-  TSql* str=TSql_init(0, "message" , TString *fields, TString *w_where, TString *w_order_by, int limit, int offset)
+  TSql* str=TSql_init_with_cstring_cpy(0, "message" , TFieldList_field_names(f), 0,0, 0,0);
 
 
   
