@@ -327,7 +327,7 @@ mnstring mnstring_new(mint size, const char *str_init)
         str_init ="";
     }
     mint count = cstring_count((char*)str_init);
-    void* s =malloc(sizeof (strPrm)+(sizeof (char)*(size+1)));
+    void* s =mnalloc(sizeof (strPrm)+(sizeof (char)*(size+1)));
     if (s) {
         str =s+sizeof (strPrm);
         strPrm* flag= (strPrm*)s;
@@ -349,7 +349,7 @@ void mnstring_free(mnstring *ptr_hld)
 {
     mnstring str =* ptr_hld;
     void* s = str-sizeof (strPrm);
-    free(s);
+    mnfree(s);
     *ptr_hld=0;
 }
 
@@ -463,7 +463,7 @@ mnstring mnstring_from_double(mdouble f)
    return mnstring_new_from_cstring(cstring_from_double(f));
 }
 
-mnstring mnstring_fill_empty_with_char(mnstring str, mint start, mint end, char c)
+mnstring mnstring_fill_with_char(mnstring str, mint start, mint end, char c)
 {
     assert(str);
     assert(start>=0 && start < mnstring_size(str));
@@ -477,10 +477,10 @@ mnstring mnstring_fill_empty_with_char(mnstring str, mint start, mint end, char 
 
 mnstring mnstring_init_empty(mnstring str)
 {
-    return mnstring_fill_empty_with_char(str,mnstring_count(str),mnstring_size(str),0);
+    return mnstring_fill_with_char(str,mnstring_count(str),mnstring_size(str),0);
 }
 
 mnstring mnstring_clear(mnstring str)
 {
-    return mnstring_fill_empty_with_char(str,0,mnstring_size(str),0);
+    return mnstring_fill_with_char(str,0,mnstring_size(str),0);
 }

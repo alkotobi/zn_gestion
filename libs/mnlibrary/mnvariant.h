@@ -10,13 +10,13 @@ enum TTypes
 typedef enum TTypes TTypes;
 struct  TVariant
 {
-    TVar* value;
+    TVar value;
     TTypes value_type;
 };
 typedef struct TVariant TVariant;
 //void TVariant_test(void);
 TVariant* TVariant_new(void);
-TVariant* TVariant_init(TVariant* var, TVar* value, TTypes value_type);
+TVariant* TVariant_init(TVariant* var, TVar value, TTypes value_type);
 TVariant* TVariant_init_int(TVariant* var, int i);
 TVariant* TVariant_init_cstring(TVariant* var, char* str);
 TVariant* TVariant_init_double(TVariant* var, double f);
@@ -25,7 +25,7 @@ TVariant* TVariant_create_int(int n);
 TVariant* TVariant_create_double( double f);
 int TVariant_int(TVariant* var);
 double TVariant_double(TVariant* var);
-TVar* TVariant_value(TVariant* var);
+TVar TVariant_value(TVariant* var);
 char* TVariant_cstring(TVariant* var);
 TVariant** TVariant_clean(TVariant** var_hld);
 void TVariant_free(TVariant** var_hld);

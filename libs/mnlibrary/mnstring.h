@@ -81,6 +81,6 @@ mnstring mnstring_append_cstring(mnstring str, mint str_sub_count, const char* s
 mnstring mnstring_append_mnstring(mnstring str, mnstring str_sub);
 mnstring mnstring_from_mint(mint n);
 mnstring mnstring_from_double(mdouble f);
-mnstring mnstring_fill_empty_with_char(mnstring str,mint start,mint end,char c);
+mnstring mnstring_fill_with_char(mnstring str,mint start,mint end,char c);
 mnstring mnstring_init_empty(mnstring str);
 mnstring mnstring_clear(mnstring str);

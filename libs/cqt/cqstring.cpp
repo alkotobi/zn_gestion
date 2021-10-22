@@ -1,5 +1,5 @@
 #include <QString>
-
+#include "cstring.h"
 
 extern "C" QString* QString_new(){
     QString* s= new (std::nothrow) QString();
@@ -46,38 +46,6 @@ extern "C" QString* QString_add_QString(QString*s,QString* s_sub){
 extern "C" QString* QString_add_char(QString*s,char c){
     s->append(c);
     return s;
-}
-uint cstring_count(char* str)
-{
-    if (str) {
-        for (uint i = 0; ; i++)
-        {
-            if (str[i] == 0)
-            {
-                return i;
-            }
-        }
-    }
-    else assert(str);
-    return 0;
-}
-char* cstring_clone(char* str_src)
-{
-    if (!str_src)
-    {
-        str_src=(char*) "";
-    }
-    char* str = 0;
-    uint count = cstring_count(str_src);
-    str = (char*)calloc((count+1),sizeof (char));
-    if(str){
-        for (uint i = 0; i < count; i++)
-        {
-            str[i] = str_src[i];
-        }
-    }else assert(str);
-
-    return str;
 }
 
 extern "C"

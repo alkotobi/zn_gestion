@@ -17,3 +17,4 @@ void QString_printf(QString* s);
 QString* QString_from_int(int n);
 QString* QString_from_double(double f);
 QString* QString_from_long(long int f);
+

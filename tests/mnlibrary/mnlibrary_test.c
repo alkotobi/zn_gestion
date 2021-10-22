@@ -96,11 +96,11 @@ char mnstring_test()
     mnstring_free(&str);
     print_yellow("mnstring_fill_empty_with_char>>>\n");
     str=mnstring_new_empty(10);
-    str=mnstring_fill_empty_with_char(str,0,9,0);
-    str=mnstring_fill_empty_with_char(str,0,4,'c');
+    str=mnstring_fill_with_char(str,0,9,0);
+    str=mnstring_fill_with_char(str,0,4,'c');
     mnstring_set_count(str,5);
     res=cstring_is_equal(str,"ccccc");
-    str=mnstring_fill_empty_with_char(str,0,4,'c');
+    str=mnstring_fill_with_char(str,0,4,'c');
     test_v1(res);
     return res;
 }

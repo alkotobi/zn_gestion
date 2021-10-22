@@ -13,7 +13,7 @@ TVariant* TVariant_new()
 }
 
 
-TVariant* TVariant_init(TVariant* var, TVar* value,TTypes value_type)
+TVariant* TVariant_init(TVariant* var, TVar value,TTypes value_type)
 {
     if (var<=0)
     {
@@ -76,7 +76,7 @@ double TVariant_double(TVariant* var)
     return *((double*)(var->value));;
 }
 
-TVar* TVariant_value(TVariant* var)
+TVar TVariant_value(TVariant* var)
 {
     return var->value;
 }

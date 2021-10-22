@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-set(CMAKE_PREFIX_PATH "/Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/lib/cmake/")
+set(CMAKE_PREFIX_PATH "~/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/lib/cmake/")
 project(cqt LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)

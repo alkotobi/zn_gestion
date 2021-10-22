@@ -32,7 +32,7 @@ TArray* TArray_init_v1(TArray* arr, TSize size)
     if (arr <= 0) {
         arr = TArray_new();
     }
-    arr->data = (TPtrHld)mncalloc(size, sizeof(TVar*));
+    arr->data = (TPtrHld)mncalloc(size, sizeof(TVar));
     if (arr->data > 0) {
 
         arr->size = size;
@@ -48,8 +48,8 @@ TArray* TArray_init_v1(TArray* arr, TSize size)
 TArray* TArray_resize(TArray* arr, TSize size)
 {
     assert(TArray_size(arr) < size);
-    TPtrHld data= mnrealloc(arr->data, size * sizeof(TVar*));
-    //(TPtrHld)mncalloc((size), sizeof(TVar*));
+    TPtrHld data= mnrealloc(arr->data, size * sizeof(TVar));
+    //(TPtrHld)mncalloc((size), sizeof(TVar));
     if (data)
     {
         arr->data = data;
@@ -71,7 +71,7 @@ TArray** TArray_clean(TArray** arr_hld, TFVoidPtrHld free_val)
     if (*arr_hld) {
         for (TSize i = 0; i < TArray_count(*arr_hld); i++)
         {
-            TVar* var = TArray_item_at(*arr_hld, i);
+            TVar var = TArray_item_at(*arr_hld, i);
             free_val(&var);
         }
         TArray_set_count(*arr_hld, 0);
@@ -108,7 +108,7 @@ void TArray_set_size(TArray* arr, TSize size)
     arr->size = size;
 }
 
-TVar* TArray_item_at(TArray* arr, TSize index)
+TVar TArray_item_at(TArray* arr, TSize index)
 {
     if (arr && arr->data) {
         assert(index < arr->count);
@@ -118,7 +118,7 @@ TVar* TArray_item_at(TArray* arr, TSize index)
     }
 }
 
-TVar* TArray_add(TArray* arr, TVar* var)
+TVar TArray_add(TArray* arr, TVar var)
 {
     if (TArray_count(arr) == TArray_size(arr))
     {
@@ -153,7 +153,7 @@ char TArray_is_equal(TArray* arr1, TArray* arr2, TFCharVarVar is_equal)
     return 1;
 }
 
-TSize TArray_find(TArray* arr, TVar* item, TFCharVarVar is_equal)
+TSize TArray_find(TArray* arr, TVar item, TFCharVarVar is_equal)
 {
     for (TSize i = 0; i < TArray_count(arr); i++) {
         if (is_equal(item,TArray_item_at(arr,i))) {
@@ -163,15 +163,15 @@ TSize TArray_find(TArray* arr, TVar* item, TFCharVarVar is_equal)
     return -1;
 }
 
-TVar* TArray_set_item_at(TArray* arr, TVar* item, TSize index)
+TVar TArray_set_item_at(TArray* arr, TVar item, TSize index)
 {
     assert(index < TArray_count(arr));
-    TVar* var = TArray_item_at(arr, index);
+    TVar var = TArray_item_at(arr, index);
     arr->data[index] = item;
     return var;
 }
 
-void TArray_insert_item_at(TArray* arr, TVar* item, TSize index)
+void TArray_insert_item_at(TArray* arr, TVar item, TSize index)
 {
     assert(index < TArray_count(arr));
     if (arr->count == arr->size) {
@@ -185,10 +185,10 @@ void TArray_insert_item_at(TArray* arr, TVar* item, TSize index)
     arr->count++;
 }
 
-TVar* TArray_remove_item_at(TArray* arr, TSize index)
+TVar TArray_remove_item_at(TArray* arr, TSize index)
 {
     assert(index < TArray_count(arr));
-    TVar* var = arr->data[index];
+    TVar var = arr->data[index];
     if (index<arr->count-1) for (TSize i = index; i < arr->count-1; i++)
     {
         arr->data[i] = arr->data[i + 1];
@@ -198,9 +198,9 @@ TVar* TArray_remove_item_at(TArray* arr, TSize index)
     return var;
 }
 
-TVar* TArray_add_or_replace(TArray* arr, TVar* item, TFCharVarVar is_equal)
+TVar TArray_add_or_replace(TArray* arr, TVar item, TFCharVarVar is_equal)
 {
-    TVar* var = 0;
+    TVar var = 0;
     TSize index = TArray_find(arr, item, is_equal);
     if (index >= 0) {
         var = arr->data[index];
@@ -229,4 +229,87 @@ void TArray_sort(TArray* arr, TFCharVarVar is_great)
             }
         }
     } while (switched);
+}
+
+mnarray mnarray_new(mint size)
+{
+    mnarray arr=0;
+    void* s= mnalloc(sizeof (arrPrm)+sizeof (void*)*size);
+    if (s) {
+        arr = s+sizeof (arrPrm);
+        arrPrm* prm =(arrPrm*) s;
+        prm->size=size;
+        prm->count=0;
+    }
+    return arr;
+}
+
+void mnarray_free(mnarray *arr_hld)
+{
+    void* s = (*arr_hld)-sizeof (arrPrm);
+    mnfree(s);
+    (*arr_hld)=0;
+}
+
+TVar mnarray_append(mnarray* arr_hld, TVar item)
+{
+    assert(*arr_hld);
+    if(mnarray_count(*arr_hld)==mnarray_size(*arr_hld))
+        *arr_hld = mnarray_grow_double(*arr_hld);
+    (*arr_hld)[mnarray_count(*arr_hld)] = item;
+    mnarray_count_pp(*arr_hld);
+    return item;
+}
+
+mnarray mnarray_grow_size(mnarray arr, mint new_size)
+{
+    assert(arr);
+    assert(mnarray_size(arr)<new_size);
+    mnarray a= mnarray_new(new_size);
+    for(mint i=0;i<mnarray_count(arr);i++){
+        a[i]=arr[i];
+    }
+    mnarray_set_count(a,mnarray_count(arr));
+    mnarray_free(&arr);
+    return a;
+}
+
+arrPrm *mnarray_prm(mnarray arr)
+{
+    assert(arr);
+    return (arrPrm*)(arr-sizeof(arrPrm));
+}
+
+mint mnarray_size(mnarray arr)
+{
+    return mnarray_prm(arr)->size;
+}
+
+mint mnarray_count(mnarray arr)
+{
+     assert(arr);
+    return mnarray_prm(arr)->count;
+}
+
+void mnarray_set_count(mnarray arr, mint count)
+{
+     assert(arr);
+    mnarray_prm(arr)->count=count;
+}
+
+void mnarray_set_size(mnarray arr, mint size)
+{
+     assert(arr);
+     mnarray_prm(arr)->size = size;
+}
+
+void mnarray_count_pp(mnarray arr)
+{
+    assert(arr);
+   mnarray_prm(arr)->count++;
+}
+
+mnarray mnarray_grow_double(mnarray arr)
+{
+    return mnarray_grow_size(arr,mnarray_size(arr)*2);
 }
