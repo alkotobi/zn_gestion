@@ -19,3 +19,8 @@ void QLabel_set_text(QLabel *self, char *text)
 {
   self->setText(QString(text));
 }
+
+void QLabel_free(QLabel** label_hld){
+  delete (*label_hld);
+  *label_hld =0;
+}

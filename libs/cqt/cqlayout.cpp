@@ -128,6 +128,7 @@ QWidget *QLayoutItem_widget(QLayoutItem *self)
     return self->widget();
 }
 
+extern "C"
 QVBoxLayout *QVBoxLayout_new(QWidget *parent)
 {
     return new QVBoxLayout(parent);

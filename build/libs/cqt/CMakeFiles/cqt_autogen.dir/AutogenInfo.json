@@ -15,6 +15,11 @@
 			"EWIEGA46WW/moc_cqapplication.cpp"
 		],
 		[
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqdebug.h",
+			"MU",
+			"EWIEGA46WW/moc_cqdebug.cpp"
+		],
+		[
 			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqheader.h",
 			"MU",
 			"EWIEGA46WW/moc_cqheader.cpp"
@@ -28,6 +33,16 @@
 			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlayout.h",
 			"MU",
 			"EWIEGA46WW/moc_cqlayout.cpp"
+		],
+		[
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlineEdit.h",
+			"MU",
+			"EWIEGA46WW/moc_cqlineEdit.cpp"
+		],
+		[
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqpushButton.h",
+			"MU",
+			"EWIEGA46WW/moc_cqpushButton.cpp"
 		],
 		[
 			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqstring.h",
@@ -97,8 +112,12 @@
 	"SOURCES" : 
 	[
 		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqapplication.cpp", "MU" ],
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqdebug.cpp", "MU" ],
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqheader.cpp", "MU" ],
 		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlabel.cpp", "MU" ],
 		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlayout.cpp", "MU" ],
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlineEdit.cpp", "MU" ],
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqpushButton.cpp", "MU" ],
 		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqstring.cpp", "MU" ],
 		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqvariant.cpp", "MU" ],
 		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqwidget.cpp", "MU" ]

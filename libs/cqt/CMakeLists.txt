@@ -14,6 +14,7 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
 add_library(cqt STATIC
 cqheader.h
+cqheader.cpp
 cqstring.h
 cqstring.cpp
 cqvariant.h
@@ -26,6 +27,12 @@ cqapplication.h
 cqapplication.cpp
 cqlabel.h
 cqlabel.cpp
+cqpushButton.h
+cqpushButton.cpp
+cqdebug.h
+cqdebug.cpp
+cqlineEdit.h
+cqlineEdit.cpp
 )
 
 target_link_libraries(cqt PRIVATE Qt${QT_VERSION_MAJOR}::Widgets mnlibrary)

@@ -17,3 +17,6 @@
 /Users/merhab/dev/emacs/zn_gestion/build/tests/mnlibrary/CMakeFiles/rebuild_cache.dir
 /Users/merhab/dev/emacs/zn_gestion/build/tests/mnlibrary/CMakeFiles/edit_cache.dir
 /Users/merhab/dev/emacs/zn_gestion/build/tests/mnlibrary/CMakeFiles/mnlibrary_test.dir
+/Users/merhab/dev/emacs/zn_gestion/build/tests/cqt/CMakeFiles/rebuild_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/tests/cqt/CMakeFiles/edit_cache.dir
+/Users/merhab/dev/emacs/zn_gestion/build/tests/cqt/CMakeFiles/cqt_test.dir

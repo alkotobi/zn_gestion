@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/merhab/dev/emacs/zn_gestion/build/tests/mnlibrary/cmake_install.cmake")
+  include("/Users/merhab/dev/emacs/zn_gestion/build/tests/cqt/cmake_install.cmake")
 
 endif()
 

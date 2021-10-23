@@ -494,6 +494,12 @@ cqt_BINARY_DIR:STATIC=/Users/merhab/dev/emacs/zn_gestion/build/libs/cqt
 cqt_SOURCE_DIR:STATIC=/Users/merhab/dev/emacs/zn_gestion/libs/cqt
 
 //Value Computed by CMake
+cqt_test_BINARY_DIR:STATIC=/Users/merhab/dev/emacs/zn_gestion/build/tests/cqt
+
+//Value Computed by CMake
+cqt_test_SOURCE_DIR:STATIC=/Users/merhab/dev/emacs/zn_gestion/tests/cqt
+
+//Value Computed by CMake
 gestion_BINARY_DIR:STATIC=/Users/merhab/dev/emacs/zn_gestion/build/src
 
 //Value Computed by CMake
@@ -606,7 +612,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

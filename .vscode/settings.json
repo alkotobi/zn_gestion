@@ -2,6 +2,7 @@
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "files.associations": {
         "testing.h": "c",
-        "mnlibrary_test.h": "c"
+        "mnlibrary_test.h": "c",
+        "new": "cpp"
     }
 }

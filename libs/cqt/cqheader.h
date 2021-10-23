@@ -14,7 +14,10 @@ typedef void QVariant;
 typedef void QFormLayout;
 typedef void QGridLayout;
 typedef void QLabel;
-
+typedef void QPushButton; 
+typedef void QIcon;
+typedef void QAbstractButton;
+typedef void QLineEdit;
 //enum Qt::WindowTypeflags Qt::WindowFlags
 //window_flags
 #define Qt_Widget 0x00000000//This is the default type for QWidget. Widgets of this type are child widgets if they have a parent, and independent windows if they have no parent. See also Qt::Window and Qt::SubWindow.
@@ -53,4 +56,8 @@ typedef void QLabel;
 #define QBoxLayout_TopToBottom 2//Vertical from top to bottom.
 #define QBoxLayout_BottomToTop 3//Vertical from bottom to top.
 
+
+
+
+//qInfo is qt5.5+ only.
 
