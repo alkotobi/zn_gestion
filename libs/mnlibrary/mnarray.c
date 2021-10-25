@@ -115,6 +115,7 @@ TVar TArray_item_at(TArray* arr, TSize index)
         return arr->data[index];
     }else {
         assert(0);
+        return 0;
     }
 }
 
