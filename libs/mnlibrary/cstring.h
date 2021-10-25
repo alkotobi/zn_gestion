@@ -30,4 +30,7 @@ cstringList* cstringList_init(cstringList* l,mint size);
 void cstringList_add(cstringList* l,char* str);
 char* cstringList_item_at(cstringList* l,mint index);
 char* cstringList_to_new_cstring(cstringList* l);
+cstringList** cstringList_clear(cstringList** l_hld);
+void cstringList_free(cstringList** l_hld);
+char* cstring_concat(int str_count,...);
 

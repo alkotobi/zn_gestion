@@ -104,3 +104,21 @@ char mnstring_test()
     test_v1(res);
     return res;
 }
+
+char mntree_test()
+{
+    char res=1;
+    TField* fld=TField_init_cstring(0,cstring_clone("name"),
+    cstring_clone("me"));
+    Ttree*  t= Ttree_init(0,fld,0);{
+        Ttree* t1=Ttree_add_child(t,TField_init_double_cpy(0,"salary",2.5));{
+            Ttree* t2 = Ttree_add_child(t1,TField_init_int_cpy(0,"age",15));
+        }
+        t1=Ttree_add_child(t,TField_init_double_cpy(0,"some",2.5));{
+            Ttree* t2 = Ttree_add_child(t1,TField_init_int_cpy(0,"age",15));
+        }
+    }
+    char* str = Ttree_to_string(t,"__",TField_to_string);
+    printf("%s",str);
+    return res;
+}

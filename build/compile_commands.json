@@ -41,6 +41,16 @@
 },
 {
   "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnlist.c.o -c /Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mnlist.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mnlist.c"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
+  "command": "/usr/bin/clang -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/. -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mntree.c.o -c /Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mntree.c",
+  "file": "/Users/merhab/dev/emacs/zn_gestion/libs/mnlibrary/mntree.c"
+},
+{
+  "directory": "/Users/merhab/dev/emacs/zn_gestion/build",
   "command": "/usr/bin/clang++ -DCQT_LIBRARY -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -Ilibs/cqt -I../libs/cqt -Ilibs/cqt/cqt_autogen/include -I../libs/cqt/. -I../libs/mnlibrary/. -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtWidgets -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtCore -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/mkspecs/macx-clang -isystem /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/include/QtGui -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC -ffunction-sections -fdata-sections -std=gnu++17 -o libs/cqt/CMakeFiles/cqt.dir/cqt_autogen/mocs_compilation.cpp.o -c /Users/merhab/dev/emacs/zn_gestion/build/libs/cqt/cqt_autogen/mocs_compilation.cpp",
   "file": "/Users/merhab/dev/emacs/zn_gestion/build/libs/cqt/cqt_autogen/mocs_compilation.cpp"
 },

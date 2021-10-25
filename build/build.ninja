@@ -178,6 +178,20 @@ build libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnfieldList.c.o: C_COMPILER__mnlib
   OBJECT_DIR = libs/mnlibrary/CMakeFiles/mnlibrary.dir
   OBJECT_FILE_DIR = libs/mnlibrary/CMakeFiles/mnlibrary.dir
 
+build libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnlist.c.o: C_COMPILER__mnlibrary_Debug ../libs/mnlibrary/mnlist.c || cmake_object_order_depends_target_mnlibrary
+  DEP_FILE = libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnlist.c.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+  INCLUDES = -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/.
+  OBJECT_DIR = libs/mnlibrary/CMakeFiles/mnlibrary.dir
+  OBJECT_FILE_DIR = libs/mnlibrary/CMakeFiles/mnlibrary.dir
+
+build libs/mnlibrary/CMakeFiles/mnlibrary.dir/mntree.c.o: C_COMPILER__mnlibrary_Debug ../libs/mnlibrary/mntree.c || cmake_object_order_depends_target_mnlibrary
+  DEP_FILE = libs/mnlibrary/CMakeFiles/mnlibrary.dir/mntree.c.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+  INCLUDES = -Ilibs/mnlibrary -I../libs/mnlibrary -I../libs/mnlibrary/.
+  OBJECT_DIR = libs/mnlibrary/CMakeFiles/mnlibrary.dir
+  OBJECT_FILE_DIR = libs/mnlibrary/CMakeFiles/mnlibrary.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target mnlibrary
@@ -186,7 +200,7 @@ build libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnfieldList.c.o: C_COMPILER__mnlib
 #############################################
 # Link the static library libs/mnlibrary/libmnlibrary.a
 
-build libs/mnlibrary/libmnlibrary.a: C_STATIC_LIBRARY_LINKER__mnlibrary_Debug libs/mnlibrary/CMakeFiles/mnlibrary.dir/mntest.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/types.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/cstring.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnarray.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnstring.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnvariant.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnfield.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnfieldList.c.o
+build libs/mnlibrary/libmnlibrary.a: C_STATIC_LIBRARY_LINKER__mnlibrary_Debug libs/mnlibrary/CMakeFiles/mnlibrary.dir/mntest.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/types.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/cstring.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnarray.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnstring.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnvariant.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnfield.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnfieldList.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mnlist.c.o libs/mnlibrary/CMakeFiles/mnlibrary.dir/mntree.c.o
   ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = libs/mnlibrary/CMakeFiles/mnlibrary.dir
@@ -347,7 +361,7 @@ build libs/cqt/cqt_autogen: phony libs/cqt/CMakeFiles/cqt_autogen libs/cqt/cqt_a
 #############################################
 # Custom command for libs/cqt/cqt_autogen/timestamp
 
-build libs/cqt/cqt_autogen/timestamp: CUSTOM_COMMAND /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/libexec/uic libs/mnlibrary/libmnlibrary.a /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/libexec/moc /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/lib/libQt6Widgets.a || libs/mnlibrary/libmnlibrary.a
+build libs/cqt/cqt_autogen/timestamp: CUSTOM_COMMAND /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/libexec/uic /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/lib/libQt6Widgets.a /Users/merhab/dev/qt-everywhere-src-6.1.1/BUILD-STATIC/libexec/moc libs/mnlibrary/libmnlibrary.a || libs/mnlibrary/libmnlibrary.a
   COMMAND = cd /Users/merhab/dev/emacs/zn_gestion/build/libs/cqt && /usr/local/bin/cmake -E cmake_autogen /Users/merhab/dev/emacs/zn_gestion/build/libs/cqt/CMakeFiles/cqt_autogen.dir/AutogenInfo.json Debug && /usr/local/bin/cmake -E touch /Users/merhab/dev/emacs/zn_gestion/build/libs/cqt/cqt_autogen/timestamp
   DESC = Automatic MOC and UIC for target cqt
   depfile = /Users/merhab/dev/emacs/zn_gestion/build/libs/cqt/cqt_autogen/deps

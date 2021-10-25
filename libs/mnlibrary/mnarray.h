@@ -1,5 +1,6 @@
 #pragma once
 #include "types.h"
+#include "cstring.h"
 
 struct TArray {
     TPtrHld data;
@@ -30,6 +31,7 @@ void TArray_insert_item_at(TArray* arr, TVar item, TSize index);
 TVar TArray_remove_item_at(TArray* arr, TSize index);
 TVar TArray_add_or_replace(TArray* arr, TVar item, TFCharVarVar is_equal);
 void TArray_sort(TArray* arr, TFCharVarVar is_great);
+char* TArray_to_string(TArray* arr,char*(*to_str)(TVar));
 
 typedef struct{
     mint size;

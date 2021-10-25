@@ -12,6 +12,7 @@ void QBoxLayout_add_spacing(QBoxLayout* self,int size);
 void QBoxLayout_add_stretch(QBoxLayout* self,int stretch);
 void QBoxLayout_add_widget
 (QBoxLayout *self,QWidget *widget, int stretch,int alignement);
+void QBoxLayout_add_widget_v1(QBoxLayout *self,QWidget *widget);
 void QBoxLayout_insertLayout
 (QBoxLayout *self,int index, QLayout *layout, int stretch);
 void QBoxLayout_insert_spacing(QBoxLayout *self,int index, int size);

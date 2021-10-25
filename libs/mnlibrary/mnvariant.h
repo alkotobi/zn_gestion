@@ -33,3 +33,5 @@ void TVariant_destroy(TVariant** var_hld);
 char TVariant_is_equal(TVariant* var1, TVariant* var2);
 TTypes TVariant_type(TVariant* var);
 TVariant* TVariant_clone(TVariant* var);
+
+char* TVariant_to_string(TVariant* var);

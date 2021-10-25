@@ -15,5 +15,9 @@ add_library(mnlibrary
   mnfield.c
   mnfieldList.h
   mnfieldList.c
+  mnlist.h
+  mnlist.c
+  mntree.h
+  mntree.c
   )
 target_include_directories(mnlibrary PUBLIC ./)

@@ -1,6 +1,6 @@
 #pragma once
 #include "mnvariant.h"
-
+//TODO: assert functions params
 enum GuiType{GUI_EDIT,GUI_COMBOBOX};
 typedef enum GuiType GuiType;
 struct TFieldGuiParams{
@@ -36,6 +36,13 @@ TField* TField_init(TField* fld, TVariant* var, char is_generated,char* name);
 TField* TField_init_int(TField* fld, char* name,int val);
 TField* TField_init_double(TField* fld, char* name, double val);
 TField* TField_init_cstring(TField* fld, char* name, char* val);
+
+
+TField* TField_init_int_cpy(TField* fld, char* name,int val);
+TField* TField_init_double_cpy(TField* fld, char* name, double val);
+TField* TField_init_cstring_cpy(TField* fld, char* name, char* val);
+
+
 TField* TField_create_int(char* name, int val);
 TField* TField_create_double(char* name, double val);
 TField* TField_create_cstring(char* name, char* val);
@@ -52,3 +59,4 @@ TField* TField_clone(TField* fld);
 void TField_set_order(TField* fld, char order);
 char TFielld_order(TField* fld);
 char TField_order_is_greater(TField* fld1, TField* fld2);
+char* TField_to_string(TField* fld);

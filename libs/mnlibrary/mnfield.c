@@ -79,23 +79,37 @@ TField* TField_init(TField* fld,
 
 TField* TField_init_int(TField* fld, char* name, int val)
 {
-    TField_init(fld,
+   return  TField_init(fld,
                 TVariant_init_int(TVariant_new(), val ),
                 1,
                 name);
-    return fld;
+
 }
 
 TField* TField_init_double(TField* fld, char* name, double val)
 {
-    TField_init(fld, TVariant_init_double(TVariant_new(), val), 1,name);
-    return fld;
+    return TField_init(fld, TVariant_init_double(TVariant_new(), val), 1,name);
+    
 }
 
 TField* TField_init_cstring(TField* fld, char* name, char* val)
 {
-    TField_init(fld, TVariant_init_cstring(TVariant_new(), val), 1,name);
-    return fld;
+    return TField_init(fld, TVariant_init_cstring(TVariant_new(), val), 1,name);
+}
+
+TField* TField_init_int_cpy(TField* fld, char* name,int val)
+{
+    return TField_init_int(fld,cstring_clone(name),val);
+}
+
+TField* TField_init_double_cpy(TField* fld, char* name, double val)
+{
+    return TField_init_double(fld,cstring_clone(name),val);
+}
+
+TField* TField_init_cstring_cpy(TField* fld, char* name, char* val)
+{
+    return TField_init_cstring(fld,cstring_clone(name),cstring_clone(val));
 }
 
 TField* TField_create_int(char* name, int val)
@@ -183,4 +197,13 @@ char TFielld_order(TField* fld)
 char TField_order_is_greater(TField* fld1, TField* fld2)
 {
     return TFielld_order(fld1)>TFielld_order(fld2);
+}
+
+//TODO: test
+char* TField_to_string(TField* fld)
+{
+    char* str =TVariant_to_string(fld->data);
+    char* s=cstring_concat(4,"name :",fld->name," ",str);
+    mnfree(str);
+    return s;
 }

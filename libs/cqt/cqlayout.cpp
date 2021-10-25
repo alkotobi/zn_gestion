@@ -54,10 +54,15 @@ void QBoxLayout_add_stretch(QBoxLayout *self, int stretch)
 }
 
 extern "C"
-void QBoxLayout_add_widget
-(QBoxLayout *self,QWidget *widget, int stretch,int alignement)
+void QBoxLayout_add_widget(QBoxLayout *self,QWidget *widget,
+ int stretch,int alignement)
 {
     self->addWidget(widget,stretch,(Qt::Alignment)alignement);
+}
+
+extern "C"
+void QBoxLayout_add_widget_v1(QBoxLayout *self,QWidget *widget) {
+    self->addWidget(widget,0,(Qt::Alignment)0);
 }
 
 

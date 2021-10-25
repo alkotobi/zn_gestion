@@ -3,6 +3,9 @@
     "files.associations": {
         "testing.h": "c",
         "mnlibrary_test.h": "c",
-        "new": "cpp"
+        "new": "cpp",
+        "mnarray.h": "c",
+        "types.h": "c",
+        "bitset": "c"
     }
 }

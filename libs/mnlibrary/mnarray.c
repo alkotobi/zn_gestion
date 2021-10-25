@@ -230,6 +230,19 @@ void TArray_sort(TArray* arr, TFCharVarVar is_great)
         }
     } while (switched);
 }
+//TODO test
+char* TArray_to_string(TArray* arr,char*(*to_str)(TVar))
+{
+    cstringList* l=cstringList_init(0,250);
+    for (mint i = 0; i < arr->count; i++)
+    {
+        cstringList_add(l,to_str(arr->data[i]));
+        cstringList_add(l,cstring_clone("\n"));
+    }
+    char* str = cstringList_to_new_cstring(l);
+    cstringList_free(cstringList_clear(&l));
+    return str;
+}
 
 mnarray mnarray_new(mint size)
 {

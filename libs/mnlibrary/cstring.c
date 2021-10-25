@@ -138,6 +138,7 @@ char* cstringList_item_at(cstringList* l,mint index)
 
 char* cstringList_to_new_cstring(cstringList* l)
 {
+    assert(l);
     mint count=0;
     char* str=(char*)mnalloc((255)*sizeof(char));
     mint size=2;
@@ -158,9 +159,41 @@ char* cstringList_to_new_cstring(cstringList* l)
         }
         
     }
-    str[count]=0;
-
-
-    
+    str[count]=0;    
     return str;
+}
+//TODO:test
+cstringList** cstringList_clear(cstringList** l_hld)
+{
+    assert(*l_hld);
+    cstringList* l = *l_hld;
+    for (mint i = 0; i < l->count; i++)
+    {
+        mnfree(l->list[i]);
+    }
+    return l_hld;
+    
+}
+//TODO:test
+void cstringList_free(cstringList** l_hld)
+{
+    assert(*l_hld);
+    cstringList* l = *l_hld;
+    mnfree(l->list);
+    mnfree(l);
+    *l_hld =0;
+}
+//TODO:test
+char* cstring_concat(int str_count,...){
+    va_list ap;
+    va_start(ap,str_count);
+    cstringList* l =cstringList_init(0,20);
+    for (size_t i = 0; i < str_count; i++)
+    {
+        cstringList_add(l,va_arg(ap,char*));
+    }
+    char* s =cstringList_to_new_cstring(l);
+    va_end(ap);
+    cstringList_free(&l);
+    return s;
 }

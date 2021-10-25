@@ -150,3 +150,30 @@ TVariant* TVariant_clone(TVariant* var)
     }
     return v;
 }
+
+//TODO:test
+char* TVariant_to_string(TVariant* var){
+    char* str =0;
+    char* s=0;
+    switch (TVariant_type(var))
+    {
+    case Int:
+         s=cstring_from_int(*(int*)(var->value));
+         str= cstring_concat(2,"type: int val:",s);
+         mnfree(s);
+        return str;
+    case Double:
+          s=cstring_from_double(*(double*)(var->value));
+         str= cstring_concat(2,"type: double val:",s);
+         mnfree(s);
+        return str;
+    case CString:
+          s= (char*)(var->value);
+         str= cstring_concat(2,"type: cstring val:",s);
+        return str;
+    default:
+        assert(0);
+        break;
+    }
+    return str;
+}
