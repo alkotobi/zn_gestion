@@ -6,6 +6,9 @@
         "new": "cpp",
         "mnarray.h": "c",
         "types.h": "c",
-        "bitset": "c"
+        "bitset": "c",
+        "__config": "cpp",
+        "__nullptr": "cpp",
+        "cqheader.h": "c"
     }
 }

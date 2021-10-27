@@ -33,6 +33,12 @@ cqdebug.h
 cqdebug.cpp
 cqlineEdit.h
 cqlineEdit.cpp
+cqtableview.h
+cqtableview.cpp
+cqsqlmodal.h
+cqsqlmodal.cpp
+qsqlmodal.h
+qsqlmodal.cpp
 )
 
 target_link_libraries(cqt PRIVATE Qt${QT_VERSION_MAJOR}::Widgets mnlibrary)

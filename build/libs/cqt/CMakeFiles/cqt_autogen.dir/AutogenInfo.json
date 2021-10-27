@@ -45,9 +45,19 @@
 			"EWIEGA46WW/moc_cqpushButton.cpp"
 		],
 		[
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqsqlmodal.h",
+			"MU",
+			"EWIEGA46WW/moc_cqsqlmodal.cpp"
+		],
+		[
 			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqstring.h",
 			"MU",
 			"EWIEGA46WW/moc_cqstring.cpp"
+		],
+		[
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqtableview.h",
+			"MU",
+			"EWIEGA46WW/moc_cqtableview.cpp"
 		],
 		[
 			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqvariant.h",
@@ -58,6 +68,11 @@
 			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqwidget.h",
 			"MU",
 			"EWIEGA46WW/moc_cqwidget.cpp"
+		],
+		[
+			"/Users/merhab/dev/emacs/zn_gestion/libs/cqt/qsqlmodal.h",
+			"MU",
+			"EWIEGA46WW/moc_qsqlmodal.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -118,9 +133,12 @@
 		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlayout.cpp", "MU" ],
 		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqlineEdit.cpp", "MU" ],
 		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqpushButton.cpp", "MU" ],
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqsqlmodal.cpp", "MU" ],
 		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqstring.cpp", "MU" ],
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqtableview.cpp", "MU" ],
 		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqvariant.cpp", "MU" ],
-		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqwidget.cpp", "MU" ]
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/cqwidget.cpp", "MU" ],
+		[ "/Users/merhab/dev/emacs/zn_gestion/libs/cqt/qsqlmodal.cpp", "MU" ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

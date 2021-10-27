@@ -10,6 +10,7 @@ int main(int argc, char const *argv[])
     QVBoxLayout* l= QVBoxLayout_test(wid);
     QBoxLayout_add_widget(l,QLineEdit_test(wid),0,0);
     QBoxLayout_add_widget(l,QPushButton_test(wid),0,0);
+    QBoxLayout_add_widget_v1(l,QTableView_test(wid));
     QApplication_exec(app);
     printf("bismi allah\n");
     return 0;

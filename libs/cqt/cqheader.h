@@ -18,6 +18,10 @@ typedef void QPushButton;
 typedef void QIcon;
 typedef void QAbstractButton;
 typedef void QLineEdit;
+typedef void QTableView;
+typedef void QAbstractItemModel;
+typedef void QSqlModal ;
+typedef void QObject ;
 //enum Qt::WindowTypeflags Qt::WindowFlags
 //window_flags
 #define Qt_Widget 0x00000000//This is the default type for QWidget. Widgets of this type are child widgets if they have a parent, and independent windows if they have no parent. See also Qt::Window and Qt::SubWindow.

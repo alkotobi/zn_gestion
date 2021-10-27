@@ -23,3 +23,10 @@ QVBoxLayout* QVBoxLayout_test(QWidget* parent)
     QVBoxLayout* lay = QVBoxLayout_new(parent);
     return lay;
 }
+
+QTableView *QTableView_test(QWidget *parent)
+{
+    QTableView* v = QTableView_new(parent);
+    QTableView_set_modal(v,CQSqlModal_new(v));
+    return v;
+}
